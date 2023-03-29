@@ -1,0 +1,935 @@
+{
+	"info": {
+		"_postman_id": "93f83e1f-5748-4fe2-911e-d3f71e09e37a",
+		"name": "EA Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "300311"
+	},
+	"item": [
+		{
+			"name": "Checker-Setup",
+			"item": [
+				{
+					"name": "Get All Memberships of given Member",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/members/1/memberships",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"members",
+								"1",
+								"memberships"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Memberships of given member by type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/members/1/memberships?type=CHECKER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"members",
+								"1",
+								"memberships"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "CHECKER"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Plans of given member by type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/members/1/plans?type=CHECKER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"members",
+								"1",
+								"plans"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "CHECKER"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Location of given Plans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/plans/1/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"plans",
+								"1",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get All Members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/members/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"members",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" :\"dipesh\",\n    \"lastName\": \"kc\",\n    \"email\":\"dipesh@gmail.com\",\n    \"dob\": \"1997-03-12\",\n    \"phone\":\"9844697807\",\n    \"password\":\"password\",\n    \"role\":\"STUDENT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Badge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/badges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"badges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Badge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"badgeID\": \"B-748\",\n    \"description\": \"badge Description 3\",\n    \"memberID\": 52\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/badges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"badges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Badge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/badges/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"badges",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Badges of given member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/members/402/badges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"members",
+						"402",
+						"badges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Plan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gym Center\",\n    \"description\": \"Gym entry rule\",\n    \"rules\": [\n        {\n            \"numberOfEntry\": 7,\n            \"intervals\": \"WEEK\",\n            \"role\": \"STUDENT\"\n        },\n          {\n            \"numberOfEntry\": 30,\n            \"intervals\": \"MONTH\",\n            \"role\": \"STAFF\"\n        },\n         {\n            \"numberOfEntry\": 300,\n            \"intervals\": \"YEAR\",\n            \"role\": \"FACULTY\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"plans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"plans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Membership",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\":\"2022-03-21\",\n    \"endDate\":\"2023-08-21\",\n    \"planId\":1,\n    \"memberId\":52,\n    \"memberShipType\":{\n        \"type\": \"LIMITED\"\n    }\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/memberships",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Membership",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/memberships",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Plan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/plans/52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"plans",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Membership ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/membership/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"membership",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/locations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Location By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/locations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"locations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Location",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"REC CENTRE 2\",\r\n    \"description\": \"REC-CENTRE\",\r\n    \"capacity\": 85,\r\n    \"planId\": 1,\r\n    \"locationType\": {\r\n        \"type\": \"GYMNASIUM\"\r\n    },\r\n    \"slots\": [\r\n        {\r\n            \"day\": \"SUNDAY\",\r\n            \"startTime\": \"06:34:59.135137\",\r\n            \"endTime\": \"13:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"MONDAY\",\r\n            \"startTime\": \"07:34:59.135137\",\r\n            \"endTime\": \"16:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"TUESDAY\",\r\n            \"startTime\": \"07:34:59.135137\",\r\n            \"endTime\": \"16:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"WEDNESDAY\",\r\n            \"startTime\": \"07:34:59.135137\",\r\n            \"endTime\": \"16:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"THURSDAY\",\r\n            \"startTime\": \"07:34:59.135137\",\r\n            \"endTime\": \"16:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"FRIDAY\",\r\n            \"startTime\": \"07:34:59.135137\",\r\n            \"endTime\": \"16:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"SATURDAY\",\r\n            \"startTime\": \"06:34:59.135137\",\r\n            \"endTime\": \"14:34:59.135137\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/locations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Times slots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/timeslots",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"timeslots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Location",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Location 2.2\",\r\n    \"description\": \"Dining Hall\",\r\n    \"capacity\": 45,\r\n    \"locationType\": {\r\n        \"type\":\"FLYING_HALL\"\r\n    },\r\n    \"slots\": [\r\n        {\r\n            \"day\": \"SUNDAY\",\r\n            \"startTime\": \"09:34:59.135137\",\r\n            \"endTime\": \"11:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"MONDAY\",\r\n            \"startTime\": \"13:34:59.135137\",\r\n            \"endTime\": \"14:34:59.135137\"\r\n        },\r\n        {\r\n            \"day\": \"TUESDAY\",\r\n            \"startTime\": \"15:34:59.135137\",\r\n            \"endTime\": \"18:34:59.135137\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/locations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"locations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Location",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/locations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"locations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Time Slot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/timesolts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"timesolts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Transaction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/transactions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transaction",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/transactions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n         \"entryDate\": \"2023-10-15T14:10:00\",\r\n         \"description\": \"First_Transaction\",\r\n         \"badgeId\": 1,\r\n         \"locationId\": 1,\r\n         \"membershipId\": 1\r\n          \r\n}\r\n   \r\n        \r\n       \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Transactions of given members",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/badges/1/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"badges",
+						"1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Time Solt by Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"day\": \"FRIDAY\",\r\n    \"startTime\": \"08:34:59\",\r\n    \"endTime\": \"18:34:59\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/timesolts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"timesolts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swipe Badge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"locationId\": 1,\n    \"planId\": 12,\n    \"checkerId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/badges/52/swipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"badges",
+						"52",
+						"swipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Memberships",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/memberships",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Member 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" :\"Baha\",\n    \"lastName\": \"baha\",\n    \"email\":\"baha@gmail.com\",\n    \"dob\": \"1997-03-12\",\n    \"phone\":\"9844697807\",\n    \"password\":\"password\",\n    \"role\":\"STUDENT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Member 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" :\"henok\",\n    \"lastName\": \"he\",\n    \"email\":\"henok@gmail.com\",\n    \"dob\": \"1997-03-12\",\n    \"phone\":\"9844697807\",\n    \"password\":\"password\",\n    \"role\":\"STUDENT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"members"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2Fwa290YSIsInJvbGUiOiJBRE1JTiIsImV4cCI6MTY3OTQ5MzA5MiwiaWF0IjoxNjc5NDQ5ODkyfQ.frcngJ7FN8XMj8laLffg5iOvSCPutN1UA0mPCr-kLA5Pr0D4zVLL2U77h_o1xI9BZ8axwAYerT_ckeFafFZqDA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
